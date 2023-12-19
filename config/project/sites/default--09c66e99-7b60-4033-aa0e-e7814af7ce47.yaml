@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: 'Marathon Capital'
+primary: true
+siteGroup: da17692f-9977-4435-b892-7b4ec7cf3e4d # Marathon Capital
+sortOrder: 1
