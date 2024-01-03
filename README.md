@@ -1,6 +1,7 @@
 ## About
 
-A Craft CMS starter project using DDEV for local hosting and Vite for front-end bundling and HMR.
+A Craft CMS starter project using DDEV for local hosting and Vite for front-end bundling and HMR (HMR not working right now...)
+After installing, go to et.ddev.site/admin to run the Craft CMS setup if needed.
 
 ## Notable Features:
 

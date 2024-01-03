@@ -1,0 +1,22 @@
+{# https://marathon.ddev.site/static/home.twig #}
+
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'home'
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="container mx-auto">
+
+    {% include "_partials/header-home.twig" %}
+    {% include "_partials/content-intro-home.twig" %}
+    {% include "_partials/cta-transactions.twig" %}
+
+  </div>
+
+
+{% endblock %}
