@@ -1,3 +1,98 @@
+/* ------------------------------------------------------------ *\
+	Vendor
+\* ------------------------------------------------------------ */
+
+@import 'slick-carousel/slick/slick.css';
+@import 'swiper/css';
+
+/* ------------------------------------------------------------ *\
+	Tailwind CSS
+\* ------------------------------------------------------------ */
 @import 'base/index.pcss';
 @import 'components/index.pcss';
 @import 'utilities/index.pcss';
+
+@layer base {
+	body {
+		@apply bg-white text-black font-apparat font-light text-base leading-1.39 tracking-0.32p text-lg;
+	}
+
+	p {
+		@apply font-apparat-light font-light
+	}
+
+	h2 {
+		@apply text-44 leading-none font-freight-disp-pro font-light tracking-0.029;
+	}
+
+	@media screen(md) {
+		h2 {
+			@apply text-64
+		}
+	}
+
+	@media screen(lg) {
+		h2 {
+			@apply text-90
+		}
+	}
+
+    h3 {
+        @apply text-44 leading-none font-freight-disp-pro font-light tracking-0.029;
+    }
+
+	@media screen(lg) {
+		h3 {
+			@apply text-64
+		}
+	}
+
+	h4 {
+		@apply text-32 leading-1.125 font-freight-disp-pro font-light tracking-0.029
+	}
+
+	@media screen(lg) {
+		h4 {
+			@apply text-44 leading-1.046
+		}
+	}
+}
+
+/* ------------------------------------------------------------ *\
+	Overwrites
+\* ------------------------------------------------------------ */
+
+.slider-logos .swiper-pagination {
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	gap: 3px;
+	position: absolute;
+	bottom: 8px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slider-logos .swiper-pagination .swiper-pagination-bullet {
+	cursor: pointer;
+	flex: 1;
+	background: #E7E7E7;
+	height: 3px;
+	transition: background .3s;
+}
+
+.slider-logos .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: #39B077;
+}
+
+.slider-partners .slick-slide {
+	margin: 0 14px;
+}
+
+/* the parent */
+.slider-partners .slick-list {
+	margin: 0 -14px;
+	padding: 0 28px;
+	overflow: initial;
+}

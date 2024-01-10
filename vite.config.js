@@ -43,7 +43,7 @@ export default defineConfig(({command}) => ({
   },
   server: {
     host: '0.0.0.0',
-    port: 3000,
-    strictPort: true,
+    port: 3456,
+    strictPort: false,
   },
 }));

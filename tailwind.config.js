@@ -1,6 +1,6 @@
 module.exports = {
   corePlugins: {
-    container: false,
+    container: true,
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
@@ -10,14 +10,119 @@ module.exports = {
     './templates/**/*.twig',
   ],
   theme: {
+    screens: {
+			'sm': '375px',
+			'smd' : '576px',
+			'md' : '768px',
+			'lg' : '1024px',
+			'xl' : '1200px',
+			'2xl' : '1400px'
+		},
+    container: {
+			center: true,
+			padding: {
+				DEFAULT: '21px',
+				xl: '28px',
+			},
+			screens: {
+				xl: '1440px'
+			}
+		},
     extend: {
       minHeight: {
         'screenh' : '100vh',
       },
+      colors: {
+        'transparent': 'transparent',
+        'current': 'currentColor',
+        'primary': '#191A1A',
+        'text': '#101E1A',
+        'green': '#39B077',
+        'green-2': '#DAEDE9',
+        'green-3': '#D5F6E1',
+        'green-4': '#79B397',
+        'green-5': '#D6E9E4',
+        'dark-green': '#1F3332',
+        'gray': '#D9D9D9',
+        'gray-2': '#D1D1D1',
+        'gray-3': '#B0B0B0',
+        'gray-4': '#E7E7E7',
+        'gray-5': '#888888',
+        'gray-6': '#6D6D6D',
+        'gray-7': '#979797',
+        'gray-8': '#F9F8F6',
+        'gray-9': '#888888',
+        'blue': '#296782',
+        'black': '#000000',
+        },
+      fontFamily: {
+        'apparat' : ['apparat', 'serif'],
+        'apparat-light' : ['apparat-light', 'serif'],
+        'freight-disp-pro' : ['freight-display-pro', 'serif'],
+      },
+      lineHeight: {
+        '1.125' : '1.125',
+        '1.175' : '1.175',
+        '1.28' : '1.28',
+        '1.39' : '1.39',
+        '1.64' : '1.64',
+        '1.046' : '1.046',
+      },
+      fontSize: {
+        '32' : '32px',/* 32px */
+        '44' : '44px',/* 44px */
+        '64' : '64px',/* 64px */
+        '64' : '4rem',/* 64px */
+        '90' : '90px',/* 90px */
+      },
+      padding: {
+        '5p': '5px',
+        '15p': '15px',
+        '11p': '11px',
+        '15p': '15px',
+        '18p': '18px',
+        '28p': '28px',
+        '30p': '30px',
+        '53p': '53px',
+        '60p': '60px',
+        '90p': '90px',
+        '120p': '120px',
+      },
+      margin: {
+        '5p': '5px',
+        '15p': '15px',
+      },
+      gap: {
+        '15p': '15px',
+      },
+      borderWidth:{
+        '1': '1px',/* 1px */
+      },
+      borderRadius: {
+        '20': '20px',
+      },
+      letterSpacing: {
+        '0.029': '0.029em',//2.61px;
+        '0.02': '0.02em', //0.32px
+        '0.32p': '0.32px', //0.525px
+        '0.525p': '0.525px', //0.525px
+        '0.6p': '0.6px', //0.525px
+        '1.655p': '1.655px'//1.655px
+      },
+      zIndex: {
+        '1': '1',
+      },
+      boxShadow: {
+        'shadow-1': '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
+        'shadow-button': '0px 0px 0px .2px #39B077',
+      },
+      aspectRatio: {
+        '1/1': '1/1',
+      },
     },
     fontFamily: {
-      sans: ['Equip', 'Cabin', 'sans-serif'],
-      serif: ['Freight Display', 'serif'],
+      sans: ['apparat', 'serif'],
+      serif: ['freight-display-pro', 'serif'],
     },
   },
 };
