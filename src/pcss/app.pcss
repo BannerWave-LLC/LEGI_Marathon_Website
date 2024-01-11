@@ -2,60 +2,60 @@
 	Vendor
 \* ------------------------------------------------------------ */
 
-@import 'slick-carousel/slick/slick.css';
-@import 'swiper/css';
+@import "slick-carousel/slick/slick.css";
+@import "swiper/css";
 
 /* ------------------------------------------------------------ *\
 	Tailwind CSS
 \* ------------------------------------------------------------ */
-@import 'base/index.pcss';
-@import 'components/index.pcss';
-@import 'utilities/index.pcss';
+@import "base/index.pcss";
+@import "components/index.pcss";
+@import "utilities/index.pcss";
 
 @layer base {
-	body {
-		@apply bg-white text-black font-apparat font-light text-base leading-1.39 tracking-0.32p text-lg;
-	}
+  body {
+    @apply bg-white text-black font-apparat font-light text-base leading-1.39 tracking-0.32p text-lg;
+  }
 
-	p {
-		@apply font-apparat-light font-light
-	}
+  p {
+    @apply font-apparat-light font-light;
+  }
 
-	h2 {
-		@apply text-44 leading-none font-freight-disp-pro font-light tracking-0.029;
-	}
+  h2 {
+    @apply text-44 leading-none font-freight-disp-pro font-light tracking-0.029;
+  }
 
-	@media screen(md) {
-		h2 {
-			@apply text-64
-		}
-	}
-
-	@media screen(lg) {
-		h2 {
-			@apply text-90
-		}
-	}
-
-    h3 {
-        @apply text-44 leading-none font-freight-disp-pro font-light tracking-0.029;
+  @media screen(md) {
+    h2 {
+      @apply text-64;
     }
+  }
 
-	@media screen(lg) {
-		h3 {
-			@apply text-64
-		}
-	}
+  @media screen(lg) {
+    h2 {
+      @apply text-90;
+    }
+  }
 
-	h4 {
-		@apply text-32 leading-1.125 font-freight-disp-pro font-light tracking-0.029
-	}
+  h3 {
+    @apply text-44 leading-none font-freight-disp-pro font-light tracking-0.029;
+  }
 
-	@media screen(lg) {
-		h4 {
-			@apply text-44 leading-1.046
-		}
-	}
+  @media screen(lg) {
+    h3 {
+      @apply text-64;
+    }
+  }
+
+  h4 {
+    @apply text-32 leading-1.125 font-freight-disp-pro font-light tracking-0.029;
+  }
+
+  @media screen(lg) {
+    h4 {
+      @apply text-44 leading-1.046;
+    }
+  }
 }
 
 /* ------------------------------------------------------------ *\
@@ -63,36 +63,59 @@
 \* ------------------------------------------------------------ */
 
 .slider-logos .swiper-pagination {
-	display: flex;
-	width: 90%;
-	margin: 0 auto;
-	gap: 3px;
-	position: absolute;
-	bottom: 8px;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 1;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  gap: 3px;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .slider-logos .swiper-pagination .swiper-pagination-bullet {
-	cursor: pointer;
-	flex: 1;
-	background: #E7E7E7;
-	height: 3px;
-	transition: background .3s;
+  cursor: pointer;
+  flex: 1;
+  background: #e7e7e7;
+  height: 3px;
+  transition: background 0.3s;
 }
 
-.slider-logos .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-	background: #39B077;
+.slider-logos
+  .swiper-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #39b077;
+}
+
+/* slider partners */
+
+.slider-partners .slick-list {
+  margin: 0 -14px;
+  padding: 0 28px;
+  overflow: initial;
 }
 
 .slider-partners .slick-slide {
-	margin: 0 14px;
+  margin: 0 14px;
 }
 
-/* the parent */
-.slider-partners .slick-list {
-	margin: 0 -14px;
-	padding: 0 28px;
-	overflow: initial;
+.slider-partners > .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 31px;
+}
+
+.slider-partners > .swiper-pagination .swiper-pagination-bullet {
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #D1D1D1;
+  transition: background 0.3s;
+}
+
+.slider-partners > .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #39b077;
 }

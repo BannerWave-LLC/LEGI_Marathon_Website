@@ -7,6 +7,10 @@ Swiper.use([Grid, Navigation, Pagination]);
 const sliderPartnersOptions = {
     init: false,
     spaceBetween: 14,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
 };
 
 let sliderPartners = new Swiper('.js-slider-partners', sliderPartnersOptions);

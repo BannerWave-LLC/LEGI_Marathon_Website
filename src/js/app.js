@@ -4,6 +4,7 @@ import "@js/parts/css";
 /* JS */
 import "@js/parts/lazyloading";
 import "@js/parts/handle-sliders";
+import "@js/parts/handle-mobile-nav";
 
 /**
  * Alpine JS

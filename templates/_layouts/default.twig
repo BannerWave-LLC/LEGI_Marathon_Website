@@ -19,7 +19,7 @@
     {% include "_includes/scripts.twig" %}
   </head>  
   {% block bodyTag %}
-  <body class="relative flex flex-col min-h-screenh antialiased">
+  <body class="relative flex flex-col min-h-screenh antialiased [&.has-open-nav]:overflow-hidden">
   {% endblock %}
     <header class="absolute top-0 left-0 w-full py-15p z-50">
       <div class="container pr-15p">
@@ -33,16 +33,11 @@
           {% include "_partials/nav-main.twig" %}
 
           <div class="lg:hidden">
-            <button class="js-nav-trigger group inline-flex items-center justify-center bg-white shadow-shadow-1 w-[75px] h-[75px] relative focus:outline-none z-10" aria-expanded="false">
+            <button class="js-nav-trigger group inline-flex items-center justify-center bg-white shadow-shadow-1 w-[75px] h-[75px] relative focus:outline-none" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
 
               <i class="w-10 h-10 relative text-green">
-                <svg width="100%" height="100%" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full absolute top-0 left-0 opacity-0 group-[.is-active]:opacity-100 transition-opacity duration-300">
-                  <path d="M1.34082 40.602L40.9428 1.00001" stroke="currentColor" stroke-width="2" />
-                  <path d="M1.34082 1.39801L40.9428 41" stroke="currentColor" stroke-width="2" />
-                </svg>
-
-                <svg width="100%" height="100%" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-[.is-active]:opacity-0 transition-opacity duration-300">
+                <svg width="100%" height="100%" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.285156 10H40.0001" stroke="currentColor" stroke-width="2" />
                   <path d="M0.285156 20H40.0001" stroke="currentColor" stroke-width="2" />
                   <path d="M0.285156 30H40.0001" stroke="currentColor" stroke-width="2" />
