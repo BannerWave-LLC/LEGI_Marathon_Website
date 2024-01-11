@@ -1,0 +1,39 @@
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'bg-gray-200'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  {% include "_partials/header-landing.twig" %}
+
+  <div class="bg-green-2 overflow-hidden pt-11 pb-30p lg:py-[67px] lg:pb-40">
+    <div class="container">
+      {% include "_partials/content-intro-home.twig" %}
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <div calss="lg:pr-[100px]">
+          {% include "_partials/content-detail-home.twig" %}
+        </div>
+
+        <div class="lg:-mt-72"> 
+          {% include "_partials/content-detail-home.twig" %}
+        </div>
+      </div>
+    </div><!-- /.container -->
+  </div> 
+
+  {% include "_partials/cta-transactions.twig" %}
+
+  {% include "_partials/cta-about-us.twig" %}
+
+  <div>
+    <div class="container max-w-[1206px]">
+      {% include "_partials/cta-news.twig" %}
+    </div><!-- /.container -->
+  </div>
+
+  {% include "_partials/nav-footer.twig" %}
+{% endblock %}

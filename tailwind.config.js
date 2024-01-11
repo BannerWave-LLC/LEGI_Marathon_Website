@@ -43,6 +43,7 @@ module.exports = {
         'green-4': '#79B397',
         'green-5': '#D6E9E4',
         'dark-green': '#1F3332',
+        'dark-green-2': '#39725E',
         'gray': '#D9D9D9',
         'gray-2': '#D1D1D1',
         'gray-3': '#B0B0B0',
@@ -80,6 +81,7 @@ module.exports = {
         '11p': '11px',
         '15p': '15px',
         '18p': '18px',
+        '25p': '25px',
         '26p': '26px',
         '28p': '28px',
         '30p': '30px',
@@ -91,6 +93,7 @@ module.exports = {
         '60p': '60px',
         '90p': '90px',
         '120p': '120px',
+        '204p': '204px',
       },
       margin: {
         '5p': '5px',
@@ -122,7 +125,8 @@ module.exports = {
         '0.32p': '0.32px', //0.525px
         '0.525p': '0.525px', //0.525px
         '0.6p': '0.6px', //0.525px
-        '1.655p': '1.655px'//1.655px
+        '1.655p': '1.655px',//1.655px
+        '2.607p': '2.607px'//2.607px
       },
       zIndex: {
         '1': '1',
@@ -133,6 +137,7 @@ module.exports = {
       },
       aspectRatio: {
         '1/1': '1/1',
+        'auto': 'auto',
       },
     },
     fontFamily: {
