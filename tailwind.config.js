@@ -61,12 +61,13 @@ module.exports = {
         'freight-disp-pro' : ['freight-display-pro', 'serif'],
       },
       lineHeight: {
+        '1.046' : '1.046',
         '1.125' : '1.125',
         '1.175' : '1.175',
         '1.28' : '1.28',
         '1.39' : '1.39',
+        '1.43' : '1.43',
         '1.64' : '1.64',
-        '1.046' : '1.046',
       },
       fontSize: {
         '32' : '32px',/* 32px */
@@ -108,6 +109,7 @@ module.exports = {
         '38p': '38px',
         '47p': '47px',
         '48p': '48px',
+        '50p': '50px',
         '69p': '69px',
         '94p': '94px',
       },
@@ -135,6 +137,7 @@ module.exports = {
       boxShadow: {
         'shadow-1': '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
         'shadow-button': '0px 0px 0px .2px #39B077',
+        'shadow-bottom-green': '0px 2px 0px 0px #39B077',
       },
       aspectRatio: {
         '1/1': '1/1',

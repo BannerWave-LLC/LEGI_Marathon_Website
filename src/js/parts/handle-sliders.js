@@ -15,30 +15,31 @@ const sliderPartnersOptions = {
 
 let sliderPartners = new Swiper('.js-slider-partners', sliderPartnersOptions);
 
-
-window.addEventListener('load', function () {
-    if  (window.outerWidth > 767 && document.querySelector('.js-slider-partners').classList.contains('swiper-initialized')) {
-        sliderPartners.destroy(true, true);
-    }
+if (document.querySelector('.js-slider-partners') !== null) {
+    window.addEventListener('load', function () {
+        if  (window.outerWidth > 767 && document.querySelector('.js-slider-partners').classList.contains('swiper-initialized')) {
+            sliderPartners.destroy(true, true);
+        }
+        
+        if (window.outerWidth < 767 && !document.querySelector('.js-slider-partners').classList.contains('swiper-initialized')) {
+            console.log('here');
+            sliderPartners = new Swiper('.js-slider-partners', sliderPartnersOptions);
+            sliderPartners.init();
+        }
+    })
     
-    if (window.outerWidth < 767 && !document.querySelector('.js-slider-partners').classList.contains('swiper-initialized')) {
-        console.log('here');
-        sliderPartners = new Swiper('.js-slider-partners', sliderPartnersOptions);
-        sliderPartners.init();
-    }
-})
-
-window.addEventListener('resize', function () {
-    if  (window.outerWidth > 767 && document.querySelector('.js-slider-partners').classList.contains('swiper-initialized')) {
-        sliderPartners.destroy(true, true);
-    }
-    
-    if (window.outerWidth < 767 && !document.querySelector('.js-slider-partners').classList.contains('swiper-initialized')) {
-        console.log('here2');
-        sliderPartners = new Swiper('.js-slider-partners', sliderPartnersOptions);
-        sliderPartners.init();
-    }
-})
+    window.addEventListener('resize', function () {
+        if  (window.outerWidth > 767 && document.querySelector('.js-slider-partners').classList.contains('swiper-initialized')) {
+            sliderPartners.destroy(true, true);
+        }
+        
+        if (window.outerWidth < 767 && !document.querySelector('.js-slider-partners').classList.contains('swiper-initialized')) {
+            console.log('here2');
+            sliderPartners = new Swiper('.js-slider-partners', sliderPartnersOptions);
+            sliderPartners.init();
+        }
+    })
+}
 
 
 
