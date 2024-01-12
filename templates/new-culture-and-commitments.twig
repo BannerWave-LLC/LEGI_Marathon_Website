@@ -1,0 +1,27 @@
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'bg-gray-200'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  {% include "_partials/header-detail.twig" %}
+
+  <div class="pt-10 lg:pt-82p">
+    {% include "_partials/content-intro-who.twig" %}
+  </div>
+
+  {% include "_partials/content-detail-who.twig" %}
+
+  {% include "_partials/content-intro-who.twig" %}
+
+  {% include "_partials/content-detail-who.twig" %}
+
+  {% include "_partials/content-community-who.twig" %}
+
+  {% include "_partials/cta-our-team.twig" %}
+
+  {% include "_partials/nav-footer.twig" %}
+{% endblock %}
