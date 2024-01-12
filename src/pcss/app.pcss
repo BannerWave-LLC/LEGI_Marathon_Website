@@ -4,6 +4,7 @@
 
 @import "slick-carousel/slick/slick.css";
 @import "swiper/css";
+@import "tingle.js/dist/tingle.css";
 
 /* ------------------------------------------------------------ *\
 	Tailwind CSS
@@ -14,7 +15,7 @@
 
 @layer base {
   body {
-    @apply bg-gray-8 text-black font-apparat font-light text-base leading-1.39 tracking-0.32p text-lg;
+    @apply bg-gray-8 text-black font-apparat font-normal text-base leading-1.39 tracking-0.32p text-lg;
   }
 
   p {
@@ -120,4 +121,26 @@
   > .swiper-pagination
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #39b077;
+}
+
+/* person modal */
+
+.person-modal {
+  padding: 37px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.person-modal .tingle-modal-box__content {
+  padding: 0;
+  background: transparent;
+}
+
+.person-modal .tingle-modal-box {
+  width: 100%;
+  max-width: 1016px;
+  background: transparent;
+}
+
+.person-modal .tingle-modal__close {
+  display: none;
 }
