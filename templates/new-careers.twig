@@ -1,0 +1,17 @@
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'bg-gray-200'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  {% include "_partials/header-landing.twig" %}
+
+  {% include "_partials/content-detail-careers.twig" %}
+
+  {% include "_partials/cta-our-team.twig" %}
+
+  {% include "_partials/nav-footer.twig" %}
+{% endblock %}
