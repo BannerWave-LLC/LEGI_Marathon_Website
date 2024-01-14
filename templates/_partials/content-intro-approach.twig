@@ -1,1 +1,17 @@
-<img src="/dist/module-reference/content-intro-approach-desktop.png" alt="content-intro-approach">
+<div class="py-10 lg:py-11 lg:pb-52p bg-green-2">
+	<div class="container">
+		<div class="border-t-1 border-t-gray-3 relative before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-[94px] lg:before:w-[300px] before:h-[2px] before:bg-dark-charcoal text-center pt-38p mb-10 lg:pt-16 lg:mb-74p">
+			<div class="max-w-[725px] mx-auto">
+				<h4 class="mb-15p lg:mb-7">Our approach</h4>
+
+				<p class="lg:px-7">As a global investment bank, focused solely on a low carbon economy, we provide multi-disciplinary teams with the accumulated knowledge and relationships necessary across to deliver premier, client-driven service.</p>
+			</div>
+		</div>
+
+		<div class="grid lg:grid-cols-4 gap-[30px] lg:gap-[22px]">
+			{% for i in 1..4 %}
+				{% include "_partials/industry-participant-box.twig" %}
+			{% endfor %}
+		</div>
+	</div>
+</div>

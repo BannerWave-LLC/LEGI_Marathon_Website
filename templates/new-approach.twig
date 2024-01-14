@@ -1,0 +1,24 @@
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'bg-gray-200'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  {% include "_partials/header-landing.twig" %}
+
+  {% include "_partials/content-intro-approach.twig" %}
+  {% include "_partials/content-detail-approach.twig" %}
+  {% include "_partials/content-detail-approach.twig" %}
+  {% include "_partials/content-map-approach.twig" %}
+
+  <div>
+    <div class="container max-w-[1206px]">
+      {% include "_partials/cta-news.twig" %}
+    </div><!-- /.container -->
+  </div>
+
+  {% include "_partials/nav-footer.twig" %}
+{% endblock %}
