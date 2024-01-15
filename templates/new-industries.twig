@@ -1,0 +1,25 @@
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'bg-gray-200'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  {% include "_partials/header-detail.twig" %}
+
+  <div class="py-6 lg:py-80p">
+    <div class="container">
+      {% include "_partials/content-intro-industries-services.twig" %}
+
+      {% include "_partials/content-industries-services-detail.twig" %}
+    </div>
+  </div>
+
+
+
+  {% include "_partials/cta-our-team.twig" %}
+
+  {% include "_partials/nav-footer.twig" %}
+{% endblock %}
