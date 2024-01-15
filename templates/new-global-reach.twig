@@ -1,0 +1,21 @@
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'bg-gray-200'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  {% include "_partials/header-detail.twig" %}
+
+  {% include "_partials/content-map-global.twig" %}
+
+  {% include "_partials/content-stat-global.twig" %}
+
+  {% include "_partials/cta-transactions.twig" %}
+
+  {% include "_partials/cta-about-us.twig" %}
+
+  {% include "_partials/nav-footer.twig" %}
+{% endblock %}
