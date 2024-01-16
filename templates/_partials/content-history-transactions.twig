@@ -1,1 +1,31 @@
-<img src="/dist/module-reference/content-history-transactions-desktop.png" alt="content-history-transactions">
+<div class="bg-green-5 overflow-hidden py-29p lg:py-16 lg:pb-38p">
+	<div class="container">
+		<div class="border-t-1 border-t-gray-3 relative before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-[137px] lg:before:w-[200px] before:h-[1px] before:bg-dark-charcoal py-4 lg:py-18p">
+			<h4 class="text-center lg:text-50 lg:leading-1.06 lg:tracking-1.018 mb-8 lg:mb-51p">Our History</h4>
+
+			<div class="scroll-transactions-wrapper overflow-x-auto flex flex-no-wrap gap-2.5 lg:gap-[17px] pb-15p pr-5 -mr-5 lg:-mr-7 lg:pb-26p">
+				<div class="bg-dark-green-2 text-white w-[353px] lg:w-[456px] border-b-2 border-b-green flex py-6 px-18p lg:px-5">
+					<div class="w-[353px] lg:w-[456px] flex flex-col justify-between">
+						<div>
+							<strong class="flex-1 font-bold tracking-1.655p text-sm uppercase mb-0 inline-block">Our First Decade</strong>
+
+							<h4 class="-mt-5p mb-6">2000 – 2009</h4>
+						</div>
+
+						<div>
+							<p class="text-sm leading-1.43 tracking-0.525p mb-2.5 lg:font-apparat lg:font-normal lg:leading-1.28 lg:tracking-0.6p">Brokered Early Institutional Capital U.S. Renewable Power Transactions </p>
+
+							<p class="text-sm leading-1.43 tracking-0.525p lg:font-apparat lg:font-normal lg:leading-1.28 lg:tracking-0.6ps">U.S. & Canada Wind Development Platform M&A Leadership</p>
+						</div>
+					</div>
+				</div>
+
+				{% for i in 1..10 %}
+					<div class="max-w-[332px] flex-none">
+						{% include "_partials/tile-transaction-featured.twig" %}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
