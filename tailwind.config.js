@@ -53,6 +53,7 @@ module.exports = {
         'gray-7': '#979797',
         'gray-8': '#F9F8F6',
         'gray-9': '#DDDDDD',
+        'gray-10-opacity-50': 'rgba(102, 100, 100, 0.50)',
         'blue': '#296782',
         'black': '#000000',
         'dark-charcoal': '#333333',
