@@ -1,0 +1,33 @@
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'bg-gray-200'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  {% include "_partials/header-news.twig" %}
+
+  <div class="pt-52p pb-2.5 lg:pt-16 lg:pb-8">
+    <div class="container">
+      <div class="border-t-1 border-t-gray-3 relative before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-[94px] lg:before:w-[106px] before:h-[1px] before:bg-dark-charcoal py-4 lg:py-18p">
+        <h4 class="text-center lg:text-50 lg:leading-1.06 lg:tracking-1.018 mb-6 lg:mb-34p">News</h4>
+
+        <div class="mb-6 grid grid-cols-1 gap-[15px] md:grid-cols-2 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-10 lg:mb-54p">
+          {% for i in 1..12 %}
+              {% include "_partials/tile-news-large.twig" %}
+          {% endfor %}
+        </div>
+
+        {% include "_partials/nav-pager.twig" %}
+      </div>
+    </div>
+  </div>
+
+  {% include "_partials/content-awards-news.twig" %}
+
+  {% include "_partials/content-events-news.twig" %}
+
+  {% include "_partials/nav-footer.twig" %}
+{% endblock %}
