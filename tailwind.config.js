@@ -44,6 +44,7 @@ module.exports = {
         'green-5': '#D6E9E4',
         'dark-green': '#1F3332',
         'dark-green-2': '#39725E',
+        'dark-green-3': '#262B2A',
         'gray': '#D9D9D9',
         'gray-2': '#D1D1D1',
         'gray-3': '#B0B0B0',
@@ -58,6 +59,7 @@ module.exports = {
         'black': '#000000',
         'dark-charcoal': '#333333',
         'yellow': '#EAB44A',
+        'hero-gradient-to-bottom': 'linear-gradient(to bottom, rgba(31,51,50,0.95) 0%,rgba(38,43,42,1) 60%,rgba(38,43,42,0) 100%)'
         },
       fontFamily: {
         'apparat' : ['apparat', 'serif'],
