@@ -17,7 +17,6 @@ const sliderBaseOptions = {
     slidesPerView: 1,
     loop: true,
     spaceBetween: 10,
-    autoHeight: true,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -32,36 +31,86 @@ if (document.querySelector('.js-slider-partners') !== null) {
     window.addEventListener('load', function () {
         if  (window.outerWidth > 767 && document.querySelector('.js-slider-partners').classList.contains('swiper-initialized')) {
             sliderPartners.destroy(true, true);
-            sliderAwards.destroy(true, true);
-            sliderEvents.destroy(true, true);
         }
         
         if (window.outerWidth < 767 && !document.querySelector('.js-slider-partners').classList.contains('swiper-initialized')) {
             sliderPartners = new Swiper('.js-slider-partners', sliderPartnersOptions);
             sliderPartners.init();
-
-            sliderAwards = new Swiper('.js-slider-awards', sliderBaseOptions);
-            sliderAwards.init();
-
-            sliderEvents = new Swiper('.js-slider-events', sliderBaseOptions);
-            sliderEvents.init();
         }
     })
     
     window.addEventListener('resize', function () {
         if  (window.outerWidth > 767 && document.querySelector('.js-slider-partners').classList.contains('swiper-initialized')) {
             sliderPartners.destroy(true, true);
+        }
+
+        if  (window.outerWidth > 767 && document.querySelector('.js-slider-awards').classList.contains('swiper-initialized')) {
             sliderAwards.destroy(true, true);
+        }
+
+        if  (window.outerWidth > 767 && document.querySelector('.js-slider-events').classList.contains('swiper-initialized')) {
             sliderEvents.destroy(true, true);
         }
         
         if (window.outerWidth < 767 && !document.querySelector('.js-slider-partners').classList.contains('swiper-initialized')) {
             sliderPartners = new Swiper('.js-slider-partners', sliderPartnersOptions);
             sliderPartners.init();
+        }
 
+        if (window.outerWidth < 767 && !document.querySelector('.js-slider-awards').classList.contains('swiper-initialized')) {
             sliderAwards = new Swiper('.js-slider-awards', sliderBaseOptions);
             sliderAwards.init();
+        }
 
+        if (window.outerWidth < 767 && !document.querySelector('.js-slider-events').classList.contains('swiper-initialized')) {
+            sliderEvents = new Swiper('.js-slider-events', sliderBaseOptions);
+            sliderEvents.init();
+        }
+    })
+}
+
+if (document.querySelector('.js-slider-awards') !== null) {
+    window.addEventListener('load', function () {
+        if  (window.outerWidth > 767 && document.querySelector('.js-slider-awards').classList.contains('swiper-initialized')) {
+            sliderAwards.destroy(true, true);
+        }
+
+        if (window.outerWidth < 767 && !document.querySelector('.js-slider-awards').classList.contains('swiper-initialized')) {
+            sliderAwards = new Swiper('.js-slider-awards', sliderBaseOptions);
+            sliderAwards.init();
+        }
+    })
+    
+    window.addEventListener('resize', function () {
+        if  (window.outerWidth > 767 && document.querySelector('.js-slider-awards').classList.contains('swiper-initialized')) {
+            sliderAwards.destroy(true, true);
+        }
+
+        if (window.outerWidth < 767 && !document.querySelector('.js-slider-awards').classList.contains('swiper-initialized')) {
+            sliderAwards = new Swiper('.js-slider-awards', sliderBaseOptions);
+            sliderAwards.init();
+        }
+    })
+}
+
+if (document.querySelector('.js-slider-events') !== null) {
+    window.addEventListener('load', function () {
+        if  (window.outerWidth > 767 && document.querySelector('.js-slider-events').classList.contains('swiper-initialized')) {
+            sliderEvents.destroy(true, true);
+        }
+
+        if (window.outerWidth < 767 && !document.querySelector('.js-slider-events').classList.contains('swiper-initialized')) {
+            sliderEvents = new Swiper('.js-slider-events', sliderBaseOptions);
+            sliderEvents.init();
+        }
+    })
+    
+    window.addEventListener('resize', function () {
+        if  (window.outerWidth > 767 && document.querySelector('.js-slider-events').classList.contains('swiper-initialized')) {
+            sliderEvents.destroy(true, true);
+        }
+
+        if (window.outerWidth < 767 && !document.querySelector('.js-slider-events').classList.contains('swiper-initialized')) {
             sliderEvents = new Swiper('.js-slider-events', sliderBaseOptions);
             sliderEvents.init();
         }
