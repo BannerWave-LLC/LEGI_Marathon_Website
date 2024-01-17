@@ -1,0 +1,31 @@
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'bg-gray-200'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  {% include "_partials/header-article.twig" %}
+
+  <div class="pt-9 pb-60p lg:pt-60p lg:pb-16">
+    <div class="container">
+      <div class="lg:flex lg:gap-5 border-t-1 border-t-gray-3 relative before:absolute before:top-0 before:left-0 before:w-[129px] before:h-[1px] before:bg-dark-charcoal pt-17p lg:pt-7">
+        <div class="w-full lg:max-w-[331px]">
+          <strong class="font-bold tracking-1.655p text-sm uppercase inline-block mb-5">RELATED STORIES</strong>
+        </div>
+
+        <div class="flex-1">
+          <div class="w-full lg:max-w-[914px] lg:ml-auto grid gap-[14px] lg:gap-[21px] lg:grid-cols-2 lg:pt-4">
+            {% for i in 1..2 %}
+              {% include "_partials/tile-news-large.twig" %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include "_partials/nav-footer.twig" %}
+{% endblock %}
