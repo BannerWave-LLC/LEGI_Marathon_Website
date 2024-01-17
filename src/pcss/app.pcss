@@ -63,44 +63,6 @@
 	Overwrites
 \* ------------------------------------------------------------ */
 
-.slider-logos .swiper-pagination {
-  display: flex;
-  width: 90%;
-  margin: 0 auto;
-  gap: 3px;
-  position: absolute;
-  bottom: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-.slider-logos .swiper-pagination .swiper-pagination-bullet {
-  cursor: pointer;
-  flex: 1;
-  background: #e7e7e7;
-  height: 3px;
-  transition: background 0.3s;
-}
-
-.slider-logos
-  .swiper-pagination
-  .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #39b077;
-}
-
-/* slider partners */
-
-.slider-partners .slick-list {
-  margin: 0 -14px;
-  padding: 0 28px;
-  overflow: initial;
-}
-
-.slider-partners .slick-slide {
-  margin: 0 14px;
-}
-
 /* swiper pagination */
 
 .swiper > .swiper-pagination {
@@ -123,6 +85,47 @@
   > .swiper-pagination
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #39b077;
+}
+
+/* slider logos */
+
+.slider-logos .swiper-pagination {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  gap: 3px;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+
+.slider-logos .swiper-pagination .swiper-pagination-bullet {
+  cursor: pointer;
+  flex: 1;
+  border-radius: 0;
+  background: #e7e7e7;
+  height: 3px;
+  transition: background 0.3s;
+}
+
+.slider-logos
+  .swiper-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #39b077;
+}
+
+/* slider partners */
+
+.slider-partners .slick-list {
+  margin: 0 -14px;
+  padding: 0 28px;
+  overflow: initial;
+}
+
+.slider-partners .slick-slide {
+  margin: 0 14px;
 }
 
 /* slider awards */
