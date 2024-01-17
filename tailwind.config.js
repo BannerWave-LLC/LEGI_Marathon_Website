@@ -56,10 +56,12 @@ module.exports = {
         'gray-8': '#F9F8F6',
         'gray-9': '#DDDDDD',
         'gray-10-opacity-50': 'rgba(102, 100, 100, 0.50)',
+        'granite-gray': '#5D5D5D',
         'blue': '#296782',
         'black': '#000000',
         'dark-charcoal': '#333333',
         'yellow': '#EAB44A',
+        'dark-yellow': '#B76617',
         'hero-gradient-to-bottom': 'linear-gradient(to bottom, rgba(31,51,50,0.95) 0%,rgba(38,43,42,1) 60%,rgba(38,43,42,0) 100%)'
         },
       fontFamily: {
@@ -132,6 +134,7 @@ module.exports = {
         '77p': '77px',
         '80p': '80px',
         '82p': '82px',
+        '84p': '84px',
         '88p': '88px',
         '90p': '90px',
         '92p': '92px',
@@ -142,6 +145,7 @@ module.exports = {
       },
       margin: {
         '5p': '5px',
+        '7p': '7px',
         '9p': '9px',
         '11p': '11px',
         '15p': '15px',
