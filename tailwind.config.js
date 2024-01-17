@@ -42,6 +42,7 @@ module.exports = {
         'green-3': '#D5F6E1',
         'green-4': '#79B397',
         'green-5': '#D6E9E4',
+        'green-6': '#D4E8E2',
         'dark-green': '#1F3332',
         'dark-green-2': '#39725E',
         'dark-green-3': '#262B2A',
@@ -67,6 +68,7 @@ module.exports = {
         'freight-disp-pro' : ['freight-display-pro', 'serif'],
       },
       lineHeight: {
+        '0.7' : '0.7',
         '1.046' : '1.046',
         '1.06' : '1.06',
         '1.125' : '1.125',
@@ -88,6 +90,7 @@ module.exports = {
         '64' : '4rem',/* 64px */
         '90' : '90px',/* 90px */
         '194' : '194px',/* 194px */
+        '374' : '374px',/* 374px */
       },
       padding: {
         '3p': '3px',
@@ -108,6 +111,7 @@ module.exports = {
         '34p': '34px',
         '38p': '38px',
         '46p': '46px',
+        '47p': '47px',
         '49p': '49px',
         '50p': '50px',
         '52p': '52px',
@@ -123,6 +127,7 @@ module.exports = {
         '70p': '70px',
         '72p': '72px',
         '73p': '73px',
+        '75p': '75px',
         '76p': '76px',
         '77p': '77px',
         '80p': '80px',
@@ -160,6 +165,7 @@ module.exports = {
         '60p': '60px',
         '69p': '69px',
         '74p': '74px',
+        '78p': '78px',
         '94p': '94px',
         '99p': '99px',
         '201p': '201px',

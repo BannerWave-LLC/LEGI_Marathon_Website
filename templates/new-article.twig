@@ -1,0 +1,192 @@
+{% extends "_layouts/default.twig" %}
+
+{% block bodyTag %}
+  {{ parent()|attr({
+    class: 'bg-gray-200'
+  }) }}
+{% endblock %}
+
+{% block content %}
+  {% include "_partials/header-article.twig" %}
+
+  <div class="pb-7 lg:py-90p lg:pb-8">
+    <div class="container">
+      <div class="lg:flex lg:gap-5">
+        <div class="w-full lg:max-w-[331px]">
+          <div class="lg:border-t-1 lg:border-t-dark-charcoal py-6">
+            <strong class="font-bold tracking-1.655p text-sm uppercase inline-block">SEGMENTS</strong>
+
+            <p>Renewable Power</p>
+          </div>
+
+          <div class="border-t-1 border-t-dark-charcoal py-6">
+            <strong class="font-bold tracking-1.655p text-sm uppercase inline-block">SERVICES</strong>
+
+            <p>Mergers & Acquisitions</p>
+          </div>
+
+          <div class="border-t-1 border-t-dark-charcoal py-6">
+            <strong class="font-bold tracking-1.655p text-sm uppercase inline-block">Contact</strong>
+
+            <ul class="grid gap-[18px]">
+              <li class="flex justify-between items-center gap-5">
+                <span>
+                  <p>Firstname Lastname</p>
+                  
+                  <p>Title</p>
+                </span>
+                
+                <a href="#" class="text-green hover:text-dark-green transition-colors duration-100">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 13.333L18.151 22.1003C19.2707 22.8468 20.7293 22.8468 21.849 22.1003L35 13.333M8.33333 31.6663H31.6667C33.5076 31.6663 35 30.174 35 28.333V11.6663C35 9.82539 33.5076 8.33301 31.6667 8.33301H8.33333C6.49238 8.33301 5 9.82539 5 11.6663V28.333C5 30.174 6.49238 31.6663 8.33333 31.6663Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="flex justify-between items-center gap-5">
+                <span>
+                  <p>Firstname Lastname</p>
+                  
+                  <p>Title</p>
+                </span>
+                
+                <a href="#" class="text-green hover:text-dark-green transition-colors duration-100">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 13.333L18.151 22.1003C19.2707 22.8468 20.7293 22.8468 21.849 22.1003L35 13.333M8.33333 31.6663H31.6667C33.5076 31.6663 35 30.174 35 28.333V11.6663C35 9.82539 33.5076 8.33301 31.6667 8.33301H8.33333C6.49238 8.33301 5 9.82539 5 11.6663V28.333C5 30.174 6.49238 31.6663 8.33333 31.6663Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="flex justify-between items-center gap-5">
+                <span>
+                  <p>Firstname Lastname</p>
+                  
+                  <p>Title</p>
+                </span>
+                
+                <a href="#" class="text-green hover:text-dark-green transition-colors duration-100">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 13.333L18.151 22.1003C19.2707 22.8468 20.7293 22.8468 21.849 22.1003L35 13.333M8.33333 31.6663H31.6667C33.5076 31.6663 35 30.174 35 28.333V11.6663C35 9.82539 33.5076 8.33301 31.6667 8.33301H8.33333C6.49238 8.33301 5 9.82539 5 11.6663V28.333C5 30.174 6.49238 31.6663 8.33333 31.6663Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex-1">
+          <div class="pr-4 w-full lg:max-w-[798px] lg:mx-auto lg:-mt-9p">
+            <p class="mb-6 lg:mb-10 lg:text-28 lg:leading-1.43">Marathon Capital, LLC (“Marathon Capital”) is pleased to announce it has advised EE North America (“EENA”), a fully owned subsidiary of European Energy A/S (“European Energy”), on the sale of its 350 MW development-stage solar project located in ERCOT North to <a href="#" class="text-green underline hover:no-underline">Osaka Gas USA Corporation</a> (“OGUSA”). Marathon Capital acted as exclusive financial advisor to European Energy on the transaction.</p>
+
+            <h4 class="mb-18p lg:text-32 lg:mb-5">Subheader 1</h4>
+
+            <p class="text-sm mb-5 lg:text-lg lg:leading-1.39">European Energy´s mission is to grow into a global force that champions the green transition, develops green energy solutions, and encourages the world to join the movement towards a fossil free society. <a href="#" class="text-green underline hover:no-underline">Inline link style</a></p>
+
+            <p class="text-sm mb-5 lg:text-lg lg:leading-1.39">The sale of this project to OGUSA commemorates EENA’s first self-developed and successfully sold renewable energy project in the United Sates. European Energy is leveraging their global expertise to enable the transition to clean energy and has plans to continue pursuing renewable energy and green fuel investments throughout the US.</p>
+
+            <strong class="mb-18p inline-block font-medium tracking-0.6p">Subheader 2</strong>
+
+            <p class="text-sm mb-5 lg:text-lg lg:leading-1.39">OGUSA, a subsidiary of Osaka Gas Co., Ltd. (“Daigas Group”), strives to contribute towards the advancement of a low carbon/carbon neutral society by investing in renewables, as well as clean natural gas-fired power plants.</p>
+
+            <p class="text-sm mb-5 lg:text-lg lg:leading-1.39">“Marathon Capital was thrilled to work alongside the European Energy team throughout this process and support its commitment to driving the green transition. The sale of this project presented an ideal opportunity for Osaka to honor its mission of accelerating the expansion of utility scale renewable investments in the US. We look forward to seeing the continued efforts from both companies as they work towards building a more sustainable energy future,” said Matt Bigham, Managing Director, Marathon Capital</p>
+
+            <strong class="mb-18p inline-block uppercase text-sm tracking-1.655p leading-1.64 font-medium">Subheader 3</strong>
+
+            <p class="text-sm mb-5 lg:text-lg lg:leading-1.39">“It’s been a pleasure to work with Marathon Capital and ensure our strategic focus for the American market. We have a goal of having a development pipeline of 10 GW renewable energy in the US by 2026, and this divestment is a part of the overall plans that we have in the USA,” said Lorena Ciciriello, CEO of EENA.</p>
+
+            <p class="text-sm mb-5 lg:text-lg lg:leading-1.39">“We’re pleased to take over the development of this project from EENA, an experienced developer delivering tailored clean energy solutions to a broad range of technologies. We hope to expand this longstanding relationship through future collaboration and contribute to the decarbonization of the US power grid,” said Sunao Okamoto, President & CEO of OGUSA.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-green-6 pt-9 pb-11 lg:pt-60p lg:pb-16">
+    <div class="container">
+      <div class="lg:flex lg:gap-5 border-t-1 border-t-gray-3 relative before:absolute before:top-0 before:left-0 before:w-[129px] lg:before:w-[113px] before:h-[1px] before:bg-dark-charcoal pt-4 lg:pt-22p">
+        <div class="w-full lg:max-w-[250px] mb-9 lg:mb-4">
+          <strong class="font-bold tracking-1.655p text-sm uppercase inline-block">LOREM IPSUM</strong>
+        </div>
+
+        <div class="flex-1">
+          <div class="w-full max-w-[945px] lg:pl-[4%] lg:pt-9">
+            <div class="lg:flex lg:items-start lg:gap-10">
+              <span class="block mb-3.5 w-[64px] lg:w-[100px] lg:aspect-1/1 2xl:w-[115px]">
+                <svg width="100%" height="100%" viewBox="0 0 115 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M92.728 89.416C77.394 89.416 64.304 77.822 64.304 59.122C64.304 35.56 85.996 13.12 111.054 0.777979L114.42 3.39599C99.834 13.12 84.5 26.958 84.5 46.406C84.5 66.602 106.94 69.968 112.55 69.22C114.42 77.822 107.688 89.416 92.728 89.416ZM29.522 89.416C13.814 89.416 0.724 77.822 0.724 59.122C0.724 35.56 22.042 13.12 47.848 0.777979L50.84 3.39599C36.254 13.12 20.92 26.958 20.92 46.406C20.92 66.602 43.36 69.968 49.344 69.22C51.214 77.822 44.108 89.416 29.522 89.416Z" fill="#39B077"/>
+                </svg>
+              </span>
+
+              <div class="flex-1">
+                  <blockquote class="mb-5 text-32 leading-1.125 font-freight-disp-pro font-light tracking-1p lg:text-44 lg:leading-1.046 lg:tracking-0.946p lg:mb-22p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</blockquote>
+
+                  <div class="flex gap-5 items-center before:w-[76px] before:h-px before:bg-black">
+                    <p>Name Lastname / Title</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pt-47p pb-60p lg:py-75p lg:pb-50p">
+    <div class="container">
+      <div class="lg:flex lg:gap-5 mb-10 lg:mb-34p">
+        <div class="w-full lg:max-w-[331px]">
+        </div>
+
+        <div class="flex-1">
+          <div class="w-full lg:max-w-[798px] lg:mx-auto lg:-mt-9p">
+            <ul class="font-apparat-light font-light text-sm mb-2.5 lg:mb-5">
+              <li class="relative pl-6 before:absolute before:top-2.5 lg:before:top-3 before:left-3 before:w-[3px] lg:before:w-1 before:h-[3px] lg:before:h-1 before:bg-black before:rounded-full lg:text-lg lg:leading-1.39 lg:pl-7">European Energy´s mission is to grow into a global force that champions the green transition, develops green energy solutions, and encourages the world to join the movement towards a fossil free society.</li>
+
+              <li class="relative pl-6 before:absolute before:top-2.5 lg:before:top-3 before:left-3 before:w-[3px] lg:before:w-1 before:h-[3px] lg:before:h-1 before:bg-black before:rounded-full lg:text-lg lg:leading-1.39 lg:pl-7">The sale of this project to OGUSA commemorates EENA’s first self-developed and successfully sold renewable energy project in the United Sates. European Energy is leveraging their global expertise to enable the transition to clean energy and has plans to continue pursuing renewable energy and green fuel investments throughout the US.</li>
+
+              <li class="relative pl-6 before:absolute before:top-2.5 lg:before:top-3 before:left-3 before:w-[3px] lg:before:w-1 before:h-[3px] lg:before:h-1 before:bg-black before:rounded-full lg:text-lg lg:leading-1.39 lg:pl-7">OGUSA, a subsidiary of Osaka Gas Co., Ltd. (“Daigas Group”), strives to contribute towards the advancement of a low carbon/carbon neutral society by investing in renewables, as well as clean natural gas-fired power plants.</li>
+            </ul>
+
+            <p class="text-sm mb-2.5 lg:mb-5 lg:text-lg lg:leading-1.39">“Marathon Capital was thrilled to work alongside the European Energy team throughout this process and support its commitment to driving the green transition. The sale of this project presented an ideal opportunity for Osaka to honor its mission of accelerating the expansion of utility scale renewable investments in the US. We look forward to seeing the continued efforts from both companies as they work towards building a more sustainable energy future,” said Matt Bigham, Managing Director, Marathon Capital</p>
+
+            <p class="text-sm mb-2.5 lg:mb-5 lg:text-lg lg:leading-1.39">“It’s been a pleasure to work with Marathon Capital and ensure our strategic focus for the American market. We have a goal of having a development pipeline of 10 GW renewable energy in the US by 2026, and this divestment is a part of the overall plans that we have in the USA,” said Lorena Ciciriello, CEO of EENA.</p>
+
+            <p class="text-sm mb-2.5 lg:mb-5 lg:text-lg lg:leading-1.39 pr-5">“We’re pleased to take over the development of this project from EENA, an experienced developer delivering tailored clean energy solutions to a broad range of technologies. We hope to expand this longstanding relationship through future collaboration and contribute to the decarbonization of the US power grid,” said Sunao Okamoto, President & CEO of OGUSA.</p>
+
+            <figure class="aspect-[351/187] my-38p lg:mt-78p lg:mb-47p">
+              <img src="/dist/images/image-3.png" alt="image-3" class="-wfull h-full object-cover">
+            </figure>
+
+            <p class="text-sm mb-2.5 lg:mb-5 lg:text-lg lg:leading-1.39">European Energy´s mission is to grow into a global force that champions the green transition, develops green energy solutions, and encourages the world to join the movement towards a fossil free society.</p>
+
+            <p class="text-sm mb-2.5 lg:mb-5 lg:text-lg lg:leading-1.39">The sale of this project to OGUSA commemorates EENA’s first self-developed and successfully sold renewable energy project in the United Sates. European Energy is leveraging their global expertise to enable the transition to clean energy and has plans to continue pursuing renewable energy and green fuel investments throughout the US.</p>
+
+            <p class="text-sm mb-2.5 lg:mb-5 lg:text-lg lg:leading-1.39">OGUSA, a subsidiary of Osaka Gas Co., Ltd. (“Daigas Group”), strives to contribute towards the advancement of a low carbon/carbon neutral society by investing in renewables, as well as clean natural gas-fired power plants.</p>
+            
+            <p class="text-sm mb-2.5 lg:mb-5 lg:text-lg lg:leading-1.39">“Marathon Capital was thrilled to work alongside the European Energy team throughout this process and support its commitment to driving the green transition. The sale of this project presented an ideal opportunity for Osaka to honor its mission of accelerating the expansion of utility scale renewable investments in the US. We look forward to seeing the continued efforts from both companies as they work towards building a more sustainable energy future,” said Matt Bigham, Managing Director, Marathon Capital</p>
+
+            <p class="text-sm mb-2.5 lg:mb-5 lg:text-lg lg:leading-1.39">“It’s been a pleasure to work with Marathon Capital and ensure our strategic focus for the American market. We have a goal of having a development pipeline of 10 GW renewable energy in the US by 2026, and this divestment is a part of the overall plans that we have in the USA,” said Lorena Ciciriello, CEO of EENA.</p>
+
+            <p class="text-sm mb-2.5 lg:mb-5 lg:text-lg lg:leading-1.39">“We’re pleased to take over the development of this project from EENA, an experienced developer delivering tailored clean energy solutions to a broad range of technologies. We hope to expand this longstanding relationship through future collaboration and contribute to the decarbonization of the US power grid,” said Sunao Okamoto, President & CEO of OGUSA.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:flex lg:gap-5 border-t-1 border-t-gray-3 relative before:absolute before:top-0 before:left-0 before:w-[129px] before:h-[1px] before:bg-dark-charcoal pt-17p lg:pt-7">
+        <div class="w-full lg:max-w-[331px]">
+          <strong class="font-bold tracking-1.655p text-sm uppercase inline-block mb-5">RELATED STORIES</strong>
+        </div>
+
+        <div class="flex-1">
+          <div class="w-full lg:max-w-[914px] lg:ml-auto grid gap-[14px] lg:gap-[21px] lg:grid-cols-2 lg:pt-4">
+            {% for i in 1..2 %}
+              {% include "_partials/tile-news-large.twig" %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include "_partials/nav-footer.twig" %}
+{% endblock %}
