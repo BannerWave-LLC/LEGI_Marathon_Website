@@ -62,6 +62,8 @@ module.exports = {
         'dark-charcoal': '#333333',
         'yellow': '#EAB44A',
         'dark-yellow': '#B76617',
+        'night-rider': '#353535',
+        'night-rider-opacity-70': 'rgba(53, 53, 53, 0.70)',
         'hero-gradient-to-bottom': 'linear-gradient(to bottom, rgba(31,51,50,0.95) 0%,rgba(38,43,42,1) 60%,rgba(38,43,42,0) 100%)'
         },
       fontFamily: {
