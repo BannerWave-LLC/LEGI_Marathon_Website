@@ -16,6 +16,7 @@ const sliderPartnersOptions = {
 const sliderBaseOptions = {
     slidesPerView: 1,
     loop: true,
+    autoHeight: true,
     spaceBetween: 10,
     pagination: {
         el: '.swiper-pagination',
