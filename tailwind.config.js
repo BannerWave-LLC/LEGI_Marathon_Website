@@ -59,6 +59,7 @@ module.exports = {
         'granite-gray': '#5D5D5D',
         'blue': '#296782',
         'black': '#000000',
+        'black-opacity-50': 'rgba(0, 0, 0, 0.50)',
         'dark-charcoal': '#333333',
         'yellow': '#EAB44A',
         'dark-yellow': '#B76617',
@@ -211,6 +212,10 @@ module.exports = {
         '1/1': '1/1',
         'auto': 'auto',
       },
+      gridTemplateRows: {
+        '0fr': '0fr',
+        '1fr': '1fr',
+      }
     },
     fontFamily: {
       sans: ['apparat', 'serif'],
