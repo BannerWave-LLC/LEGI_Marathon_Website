@@ -1,4 +1,3 @@
-import 'slick-carousel';
 import Swiper from 'swiper/bundle';
 import { Grid, Navigation, Pagination } from 'swiper/modules';
 
