@@ -6,6 +6,7 @@ import "@js/parts/lazyloading";
 import "@js/parts/handle-sliders";
 import "@js/parts/handle-mobile-nav";
 import "@js/parts/handle-modal";
+import "@js/parts/handle-filters-trigger";
 
 /**
  * Alpine JS

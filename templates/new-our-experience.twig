@@ -16,19 +16,25 @@
       <div class="border-t-1 border-t-gray-3 relative before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-[164px] lg:before:w-[245px] before:h-[1px] before:bg-dark-charcoal py-4 lg:py-18p">
         <h4 class="text-center mb-6 lg:mb-11">Transactions</h4>
 
-        <div class="border-b-1 border-b-dark-charcoal py-3 mb-6 lg:mb-11 relative group is-active">
-          <a href="#filters" class="inline-flex items-center gap-2.5 group uppercase text-sm font-bold tracking-1.655p leading-1.64">
+        <div class="border-b-1 border-b-dark-charcoal py-3 relative group is-active">
+          <a href="filters" class="js-filters-trigger inline-flex items-center gap-2.5 group uppercase text-sm font-bold tracking-1.655p leading-1.64 group/trigger">
             Filter
             
-            <span class="z-1 min-w-[26px] w-[26px] min-h-[26px] bg-green text-white flex items-center justify-center group-hover:bg-dark-green transition-colors duration-300">
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <span class="z-1 min-w-[26px] w-[26px] min-h-[26px] bg-green text-white flex items-center justify-center group-hover:bg-dark-green transition-colors duration-300 relative">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-[.is-active]/trigger:opacity-0 transition-opacity duration-100">
                 <path d="M5.70024 9.37H4.33224V5.374H0.318242V4.006H4.31424V0.0279996H5.70024V4.006H9.67824V5.374H5.70024V9.37Z" fill="currentColor" />
+              </svg>
+
+              <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-[.is-active]/trigger:opacity-100 transition-opacity duration-100">
+                <path d="M9.17523 1.86H0.841227V0.33H9.17523V1.86Z" fill="currentColor"/>
               </svg>
             </span>
           </a>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-2.5 gap-y-5 px-2.5 mb-31p lg:mb-47p lg:pl-1 lg:gap-x-5 lg:gap-y-8 lg:px-0">
+        {% include "_partials/content-filters-transactions.twig" %}
+
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-2.5 gap-y-5 pt-6 lg:pt-11 px-2.5 mb-31p lg:mb-47p lg:pl-1 lg:gap-x-5 lg:gap-y-8 lg:px-0">
           {% for i in 1..24 %}
             {% include "_partials/tile-transaction.twig" %}
           {% endfor %}

@@ -1,35 +1,157 @@
-<div class="grid grid-cols-4 gap-11 border-t-1 border-b-1 border-dark-charcoal w-screen p-10 bg-gray-8 text-black absolute top-full left-1/2 -translate-x-1/2 opacity-0 group-[.is-active]:opacity-100 z-10">
-            <div class="container">
-            </div>
-            <div>
-              <div class="flex items-center">
-                <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 bg-white border-gray-10-opacity-50 rounded focus:outline-none">
+<div class="js-filters grid transition-all grid-rows-0fr duration-100 overflow-hidden [&.is-active]:grid-rows-1fr" id="filters">
+	<div class="overflow-hidden">
+		<form action="">
+			<div class="bg-gray-8 text-black overflow-hidden border-b-1 border-b-night-rider py-8 lg:pb-46p">
+				<div class="grid lg:grid-cols-4 gap-[30px] lg:gap-11 pr-5">
+					<div>
+						<strong class="flex-1 font-bold tracking-1.655p text-sm uppercase mb-5 lg:mb-11 inline-block">BY INDUSTRY</strong>
 
-                <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Renewable Power & Sustainable Infrastructure</label>
-              </div>
-            </div>
+						<ul>
+							<li class="flex items-center gap-15p mb-4">
+								<input id="filter-industry-renewable-power" type="checkbox" value="" class="w-[18px] h-[18px] bg-white border-gray-10-opacity-50 focus:outline-none rounded-none">
 
-            <div>
-              <div class="flex items-center">
-                <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 bg-white border-gray-10-opacity-50 rounded focus:outline-none">
+								<label for="filter-industry-renewable-power" class="text-black font-apparat-light font-light leading-1.39 tracking-0.32p flex-1">Renewable Power & Sustainable Infrastructure</label>
+							</li>
 
-                <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Renewable Power & Sustainable Infrastructure</label>
-              </div>
-            </div>
+							<li class="flex items-center gap-15p mb-4">
+								<input id="filter-industry-low-carbon-molecules" type="checkbox" value="" class="w-[18px] h-[18px] bg-white border-gray-10-opacity-50 focus:outline-none rounded-none">
 
-            <div>
-              <div class="flex items-center">
-                <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 bg-white border-gray-10-opacity-50 rounded focus:outline-none">
+								<label for="filter-industry-low-carbon-molecules" class="text-black font-apparat-light font-light leading-1.39 tracking-0.32p flex-1">Low Carbon Molecules</label>
+							</li>
 
-                <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Renewable Power & Sustainable Infrastructure</label>
-              </div>
-            </div>
+							<li class="flex items-center gap-15p mb-4">
+								<input id="filter-industry-sustainable-technologies" type="checkbox" value="" class="w-[18px] h-[18px] bg-white border-gray-10-opacity-50 focus:outline-none rounded-none">
 
-            <div>
-              <div class="flex items-center">
-                <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 bg-white border-gray-10-opacity-50 rounded focus:outline-none">
+								<label for="filter-industry-sustainable-technologies" class="text-black font-apparat-light font-light leading-1.39 tracking-0.32p flex-1">Sustainable Technologies & E-Mobility</label>
+							</li>
 
-                <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Renewable Power & Sustainable Infrastructure</label>
-              </div>
-            </div>
-          </div>
+							<li class="flex items-center gap-15p">
+								<input id="filter-industry-energy-transition" type="checkbox" value="" class="w-[18px] h-[18px] bg-white border-gray-10-opacity-50 focus:outline-none rounded-none">
+
+								<label for="filter-industry-energy-transition" class="text-black font-apparat-light font-light leading-1.39 tracking-0.32p flex-1">Energy Transition</label>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<strong class="flex-1 font-bold tracking-1.655p text-sm uppercase mb-5 lg:mb-11 inline-block">BY SERVICES</strong>
+
+						<ul>
+							<li class="flex items-center gap-15p mb-4">
+								<input id="filter-service-mergers-and-acquisitions" type="checkbox" value="" class="w-[18px] h-[18px] bg-white border-gray-10-opacity-50 focus:outline-none rounded-none">
+
+								<label for="filter-service-mergers-and-acquisitions" class="text-black font-apparat-light font-light leading-1.39 tracking-0.32p flex-1">Mergers & Acquisitions</label>
+							</li>
+
+							<li class="flex items-center gap-15p mb-4">
+								<input id="filter-service-equity-capital-markets" type="checkbox" value="" class="w-[18px] h-[18px] bg-white border-gray-10-opacity-50 focus:outline-none rounded-none">
+
+								<label for="filter-service-equity-capital-markets" class="text-black font-apparat-light font-light leading-1.39 tracking-0.32p flex-1">Equity Capital Markets</label>
+							</li>
+
+							<li class="flex items-center gap-15p mb-4">
+								<input id="filter-service-debt-capital-markets" type="checkbox" value="" class="w-[18px] h-[18px] bg-white border-gray-10-opacity-50 focus:outline-none rounded-none">
+
+								<label for="filter-service-debt-capital-markets" class="text-black font-apparat-light font-light leading-1.39 tracking-0.32p flex-1">Debt Capital Markets</label>
+							</li>
+
+							<li class="flex items-center gap-15p mb-4">
+								<input id="filter-service-tax-equity" type="checkbox" value="" class="w-[18px] h-[18px] bg-white border-gray-10-opacity-50 focus:outline-none rounded-none">
+
+								<label for="filter-service-tax-equity" class="text-black font-apparat-light font-light leading-1.39 tracking-0.32p flex-1">Tax Equity</label>
+							</li>
+
+							<li class="flex items-center gap-15p mb-4">
+								<input id="filter-service-offtake-advisory" type="checkbox" value="" class="w-[18px] h-[18px] bg-white border-gray-10-opacity-50 focus:outline-none rounded-none">
+
+								<label for="filter-service-offtake-advisory" class="text-black font-apparat-light font-light leading-1.39 tracking-0.32p flex-1">Offtake Advisory </label>
+							</li>
+
+							<li class="flex items-center gap-15p">
+								<input id="filter-service-energy-transition-advisory" type="checkbox" value="" class="w-[18px] h-[18px] bg-white border-gray-10-opacity-50 focus:outline-none rounded-none">
+
+								<label for="filter-service-energy-transition-advisory" class="text-black font-apparat-light font-light leading-1.39 tracking-0.32p flex-1">Energy Transition Advisory</label>
+							</li>
+						</ul>
+					</div>
+
+					<div class="lg:pb-20">
+						<strong class="flex-1 font-bold tracking-1.655p text-sm uppercase mb-5 lg:mb-11 inline-block">BY DATE</strong>
+
+						<div class="max-w-[69%] lg:max-w-[71%]">
+							<div class="mb-4 lg:mb-5">
+								<label for="start-date" class="hidden">Start Date</label>
+
+								<div class="relative group after:absolute after:w-5 after:h-5 after:pointer-events-none after:bg-white after:right-4 after:-translate-y-1/2 after:top-1/2 text-black">
+									<input type="date" onchange="this.className=(this.value!=''?'has-value':'')" id="start-date" name="start-date" class="w-full bg-transparent py-1.5 appearance-none pr-4 focus:outline-none tracking-0.32p border-b-1 border-gray-3 before:text-black-opacity-50 before:text-sm before:leading-1.64 before:tracking-1p font-medium" autocomplete="off" placeholder="From">
+
+									<span class="block absolute top-1/2 right-3.5 w-30p h-30p text-black -translate-y-1/2 pointer-events-none z-10">
+										<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g>
+												<g>
+													<path d="M9.01172 10.2217H11.2361V12.1136H9.01172V10.2217Z" fill="currentColor"/>
+													<path d="M13.3867 10.2217H15.6111V12.1136H13.3867V10.2217Z" fill="currentColor"/>
+													<path d="M17.7598 10.2217H19.9841V12.1136H17.7598V10.2217Z" fill="currentColor"/>
+													<path d="M9.01367 13.4795H11.238V15.3713H9.01367V13.4795Z" fill="currentColor"/>
+													<path d="M13.3867 13.4795H15.6111V15.3713H13.3867V13.4795Z" fill="currentColor"/>
+													<path d="M17.7598 13.4795H19.9841V15.3713H17.7598V13.4795Z" fill="currentColor"/>
+													<path d="M9.01172 16.7373H11.2361V18.6291H9.01172V16.7373Z" fill="currentColor"/>
+													<path d="M13.3867 16.7373H15.6111V18.6291H13.3867V16.7373Z" fill="currentColor"/>
+													<path d="M17.7598 16.7373H19.9841V18.6291H17.7598V16.7373Z" fill="currentColor"/>
+													<path d="M24.205 2.7238H19.2476V1.33789H17.5407V2.7238H11.4573V1.33789H9.75031V2.7238H4.79297V22.218H24.2052L24.205 2.7238ZM6.46776 4.39892H9.74986V5.44321H11.4568V4.39892H17.5402V5.44321H19.2472V4.39892H22.5293V7.38406H6.46743L6.46776 4.39892ZM22.5296 20.5428H6.46776V9.09154H22.5296V20.5428Z" fill="currentColor"/>
+												</g>
+											</g>
+										</svg>
+									</span>
+								</div>
+							</div>
+
+							<div>
+								<label for="end-date" class="hidden">End Date</label>
+
+								<div class="relative group after:absolute after:w-5 after:h-5 after:pointer-events-none after:bg-white after:right-4 after:-translate-y-1/2 after:top-1/2 text-black">
+									<input type="date" onchange="this.className=(this.value!=''?'has-value':'')" id="end-date" name="end-date" class="w-full bg-transparent py-1.5 appearance-none pr-4 focus:outline-none tracking-0.32p border-b-1 border-gray-3 before:text-black-opacity-50 before:text-sm before:leading-1.64 before:tracking-1p font-medium" autocomplete="off" placeholder="To">
+
+									<span class="block absolute top-1/2 right-3.5 w-30p h-30p text-black -translate-y-1/2 pointer-events-none z-10">
+										<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g>
+												<g>
+													<path d="M9.01172 10.2217H11.2361V12.1136H9.01172V10.2217Z" fill="currentColor"/>
+													<path d="M13.3867 10.2217H15.6111V12.1136H13.3867V10.2217Z" fill="currentColor"/>
+													<path d="M17.7598 10.2217H19.9841V12.1136H17.7598V10.2217Z" fill="currentColor"/>
+													<path d="M9.01367 13.4795H11.238V15.3713H9.01367V13.4795Z" fill="currentColor"/>
+													<path d="M13.3867 13.4795H15.6111V15.3713H13.3867V13.4795Z" fill="currentColor"/>
+													<path d="M17.7598 13.4795H19.9841V15.3713H17.7598V13.4795Z" fill="currentColor"/>
+													<path d="M9.01172 16.7373H11.2361V18.6291H9.01172V16.7373Z" fill="currentColor"/>
+													<path d="M13.3867 16.7373H15.6111V18.6291H13.3867V16.7373Z" fill="currentColor"/>
+													<path d="M17.7598 16.7373H19.9841V18.6291H17.7598V16.7373Z" fill="currentColor"/>
+													<path d="M24.205 2.7238H19.2476V1.33789H17.5407V2.7238H11.4573V1.33789H9.75031V2.7238H4.79297V22.218H24.2052L24.205 2.7238ZM6.46776 4.39892H9.74986V5.44321H11.4568V4.39892H17.5402V5.44321H19.2472V4.39892H22.5293V7.38406H6.46743L6.46776 4.39892ZM22.5296 20.5428H6.46776V9.09154H22.5296V20.5428Z" fill="currentColor"/>
+												</g>
+											</g>
+										</svg>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="lg:pb-20">
+						<strong class="flex-1 font-bold tracking-1.655p text-sm uppercase mb-5 lg:mb-11 inline-block">BY KEYBOARD</strong>
+
+						<div>
+							<label for="filters-search" class="hidden">Search by keyword</label>
+
+							<input type="text" name="flters-search" id="flters-search" value="" class="py-1.5 border-b-1 border-b-gray-3 bg-transparent text-black placeholder:text-black-opacity-50 placeholder:text-sm placeholder:leading-1.64 placeholder:tracking-1p font-medium w-full flex-1 focus:outline-none" placeholder="Search by keyword" />
+						</div>
+					</div>
+				</div>
+
+				<div class="flex flex-col lg:flex-row lg:justify-end items-start lg:items-center gap-8 lg:gap-6 mt-8 w-full lg:px-7 lg:-mt-30p">
+					<button type="submit" class="relative inline-flex uppercase before:bg-green before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full py-2.5 px-30p bg-white overflow-hidden after:absolute after:bg-green after:top-0 after:left-0 after:right-[-2px] after:h-full after:-z-1 after:translate-y-full hover:after:translate-y-0 after:transition after:duration-100 isolate hover:text-white text-green text-sm tracking-1.655p font-bold leading-1.64 transition duration-100 shadow-shadow-button">APPLY FILTERS</button>
+
+					<a href="#" class="font-bold text-sm leading-1.64 tracking-1.655p text-gray-5 hover:text-black transition-colors duration-100">RESET FILTERS</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
