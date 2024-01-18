@@ -11,6 +11,18 @@ const sliderPartnersOptions = {
         el: '.swiper-pagination',
         clickable: true,
     },
+    on: {
+        touchStart: function (swiper, event) {
+            const target = event.target;
+
+            if (target.classList.contains('js-tags') || target.parentNode.classList.contains('js-tags')) {
+                swiper.allowTouchMove = false;
+                return;
+            }
+
+            swiper.allowTouchMove = true;
+        }
+    }
 };
 
 const sliderBaseOptions = {

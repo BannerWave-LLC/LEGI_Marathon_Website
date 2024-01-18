@@ -16,7 +16,10 @@
                     <div class="slider__slides swiper-wrapper md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-x-5 md:gap-y-9 ">
                         {% for i in 1..8 %}
                             <div class="slider__slide swiper-slide">
-                                {% include "_partials/tile-transaction.twig" %}
+                                <div class="flex flex-col gap-5 overflow-hidden">
+                                    {% include "_partials/tile-transaction.twig" %}
+                                    {% include "_partials/tile-transaction.twig" %}
+                                </div>
                             </div><!-- /.slider__slide -->
                         {% endfor %}     
                     </div><!-- /.slider__slides -->
