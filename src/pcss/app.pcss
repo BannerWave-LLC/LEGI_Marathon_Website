@@ -2,7 +2,6 @@
 	Vendor
 \* ------------------------------------------------------------ */
 
-@import "slick-carousel/slick/slick.css";
 @import "swiper/css";
 @import "tingle.js/dist/tingle.css";
 
@@ -15,11 +14,11 @@
 
 @layer base {
   body {
-    @apply bg-gray-8 text-black font-apparat font-normal text-base leading-1.39 tracking-0.32p text-lg;
+    @apply bg-gray-8 text-black font-apparat font-normal subpixel-antialiased leading-1.39 tracking-0.32p text-lg;
   }
 
   p {
-    @apply font-apparat-light font-light;
+    @apply font-apparat-light font-normal subpixel-antialiased;
   }
 
   h2 {
@@ -167,6 +166,10 @@
 }
 
 /* scrollbar */
+
+.js-tags::-webkit-scrollbar {
+  display: none;
+}
 
 /* width */
 .scroll-transactions-wrapper::-webkit-scrollbar {
