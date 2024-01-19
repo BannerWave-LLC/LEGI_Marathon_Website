@@ -13,6 +13,15 @@ const sliderBaseOptions = {
         el: '.swiper-pagination',
         clickable: true,
     },
+	on: {
+        init: function (swiper) {
+            if (swiper.slides.length === 1) {
+                this.el.classList.add('one-item');
+            } else {
+                this.el.classList.remove('one-item');
+            }
+        }
+    }
 };
 
 const personModal = new tingle.modal({

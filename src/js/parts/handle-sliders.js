@@ -6,6 +6,7 @@ Swiper.use([Grid, Navigation, Pagination]);
 const sliderPartnersOptions = {
     init: false,
     spaceBetween: 14,
+    watchOverflow: true,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -20,6 +21,15 @@ const sliderPartnersOptions = {
             }
 
             swiper.allowTouchMove = true;
+        },
+        on: {
+            init: function (swiper) {
+                if (swiper.slides.length === 1) {
+                    this.el.classList.add('one-item');
+                } else {
+                    this.el.classList.remove('one-item');
+                }
+            }
         }
     }
 };
@@ -33,6 +43,15 @@ const sliderBaseOptions = {
         el: '.swiper-pagination',
         clickable: true,
     },
+    on: {
+        init: function (swiper) {
+            if (swiper.slides.length === 1) {
+                this.el.classList.add('one-item');
+            } else {
+                this.el.classList.remove('one-item');
+            }
+        }
+    }
 };
 
 let sliderPartners = new Swiper('.js-slider-partners', sliderPartnersOptions);

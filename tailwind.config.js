@@ -46,6 +46,8 @@ module.exports = {
         'dark-green': '#1F3332',
         'dark-green-2': '#39725E',
         'dark-green-3': '#262B2A',
+        'dark-green-3-opacity-30': 'rgba(38, 43, 42, 0.30)',
+        'dark-green-3-opacity-40': 'rgba(38, 43, 42, 0.40)',
         'gray': '#D9D9D9',
         'gray-2': '#D1D1D1',
         'gray-3': '#B0B0B0',
