@@ -1,12 +1,12 @@
-<div class="bg-white shadow-shadow-1 group/tile">
+<div class="bg-white shadow-shadow-1 group/tile js-tile-transaction">
 	<div class="grid grid-cols-2 overflow-hidden border-b-1 border-b-gray-2">
 		<div class="aspect-1/1 border-l-1 border-l-gray-2 p-1">
 			<div class="slider-logos js-slider-logos swiper">
 				<div class="slider__slides swiper-wrapper">
 					<div class="slider__slide swiper-slide">
-						<a href="/dist/ajax/modal-transaction.twig" class="js-modal-transaction-trigger relative pb-2.5 flex items-center justify-center aspect-1/1 w-full h-full">
+						<div class="relative pb-2.5 flex items-center justify-center aspect-1/1 w-full h-full">
 							<img src="/dist/images/trans-alta-logo@2x.png" width="115" alt="trans-alta-logo">
-						</a>
+						</div>
 					</div><!-- /.slider__slide -->
 				</div><!-- /.slider__slides -->
 
@@ -18,21 +18,21 @@
 			<div class="slider-logos js-slider-logos swiper">
 				<div class="slider__slides swiper-wrapper">
 					<div class="slider__slide swiper-slide">
-						<a href="/dist/ajax/modal-transaction.twig" class="js-modal-transaction-trigger relative pb-2.5 flex items-center justify-center aspect-1/1 w-full h-full">
+						<div class="relative pb-2.5 flex items-center justify-center aspect-1/1 w-full h-full">
 							<img src="/dist/images/citi-logo@2x.png" width="53" alt="citi-logo">
-						</a>
+						</div>
 					</div><!-- /.slider__slide -->
 
 					<div class="slider__slide swiper-slide">
-						<a href="/dist/ajax/modal-transaction.twig" class="js-modal-transaction-trigger relative pb-2.5 flex items-center justify-center aspect-1/1 w-full h-full">
+						<div class="relative pb-2.5 flex items-center justify-center aspect-1/1 w-full h-full">
 							<img src="/dist/images/citi-logo@2x.png" width="53" alt="citi-logo">
-						</a>
+						</div>
 					</div><!-- /.slider__slide -->
 
 					<div class="slider__slide swiper-slide">
-						<a href="/dist/ajax/modal-transaction.twig" class="js-modal-transaction-trigger relative pb-2.5 flex items-center justify-center aspect-1/1 w-full h-full">
+						<div class="relative pb-2.5 flex items-center justify-center aspect-1/1 w-full h-full">
 							<img src="/dist/images/citi-logo@2x.png" width="53" alt="citi-logo">
-						</a>
+						</div>
 					</div><!-- /.slider__slide -->
 				</div><!-- /.slider__slides -->
 
@@ -41,15 +41,32 @@
 		</div>
 	</div>
 
-	<div class="flex justify-between items-center gap-2 px-2.5 py-3 border-b-2 border-b-green overflow-hidden isolate relative after:h-full after:absolute after:-z-1 after:top-0 after:left-0 after:w-full after:bg-green-2 after:translate-y-full group-hover/tile:after:translate-y-0 after:transition after:duration-100 before:z-1 before:absolute before:top-0 before:right-0 before:w-1/3 before:pointer-events-none before:h-full before:bg-gradient-to-r before:from-transparent before:via-white group-hover/tile:before:via-green-2 before:to-white group-hover/tile:before:to-green-2 before:transition before:duration-100">
-		<div class="js-tags flex flex-nowrap gap-4 text-nowrap overflow-x-auto relative pr-60p"> 
-			<a href="#" class="py-5p group-[.os-not-mac]/body:pt-7p group-[.os-not-mac]/body:pb-3p px-2.5 bg-green-3 hover:bg-green hover:text-white transition-colors duration-100 rounded-20 font-medium text-sm text-text leading-0.525p whitespace-nowrap">Tax Equity</a>
-			<a href="#" class="py-5p group-[.os-not-mac]/body:pt-7p group-[.os-not-mac]/body:pb-3p px-2.5 bg-green-3 hover:bg-green hover:text-white transition-colors duration-100 rounded-20 font-medium text-sm text-text leading-0.525p whitespace-nowrap">Tax Equity</a>
-			<a href="#" class="py-5p group-[.os-not-mac]/body:pt-7p group-[.os-not-mac]/body:pb-3p px-2.5 bg-green-3 hover:bg-green hover:text-white transition-colors duration-100 rounded-20 font-medium text-sm text-text leading-0.525p whitespace-nowrap">Tax Equity</a>
-			<a href="#" class="py-5p group-[.os-not-mac]/body:pt-7p group-[.os-not-mac]/body:pb-3p px-2.5 bg-green-3 hover:bg-green hover:text-white transition-colors duration-100 rounded-20 font-medium text-sm text-text leading-0.525p whitespace-nowrap">Tax Equity</a>
-		</div>
+	<div class="flex justify-between items-center gap-2 px-2.5 py-3 border-b-2 border-b-green overflow-hidden isolate relative after:h-full after:absolute after:-z-10 after:top-0 after:left-0 after:w-full after:bg-green-2 after:translate-y-full group-[.is-active]/tile:after:translate-y-0 after:transition after:duration-100 before:z-1 before:absolute before:top-0 before:right-0 before:w-1/3 before:pointer-events-none before:h-full before:bg-gradient-to-r before:from-transparent before:via-white group-[.is-active]/tile:before:via-green-2 before:to-white group-[.is-active]/tile:before:to-green-2 before:transition before:duration-100">
+		<div class="slider-tags js-slider-tags swiper pr-60p -z-1">
+			<div class="slider__slides swiper-wrapper">
+				<div class="slider__slide swiper-slide w-auto">
+					<span class="py-5p group-[.os-not-mac]/body:pt-7p group-[.os-not-mac]/body:pb-3p px-2.5 bg-green-3 rounded-20 font-medium text-sm text-text leading-0.525p whitespace-nowrap block">Tax Equity</span>	
+				</div><!-- /.slider__slide -->
 
-		<a href="#" class="z-1 min-w-[26px] w-[26px] min-h-[26px] bg-green text-white flex items-center justify-center hover:bg-dark-green transition-colors duration-300">
+				<div class="slider__slide swiper-slide w-auto">
+					<span class="py-5p group-[.os-not-mac]/body:pt-7p group-[.os-not-mac]/body:pb-3p px-2.5 bg-green-3 rounded-20 font-medium text-sm text-text leading-0.525p whitespace-nowrap block">Tax Equity</span>	
+				</div><!-- /.slider__slide -->
+
+				<div class="slider__slide swiper-slide w-auto">
+					<span class="py-5p group-[.os-not-mac]/body:pt-7p group-[.os-not-mac]/body:pb-3p px-2.5 bg-green-3 rounded-20 font-medium text-sm text-text leading-0.525p whitespace-nowrap block">Tax Equity</span>	
+				</div><!-- /.slider__slide -->
+				
+				<div class="slider__slide swiper-slide w-auto">
+					<span class="py-5p group-[.os-not-mac]/body:pt-7p group-[.os-not-mac]/body:pb-3p px-2.5 bg-green-3 rounded-20 font-medium text-sm text-text leading-0.525p whitespace-nowrap block">Tax Equity</span>	
+				</div><!-- /.slider__slide -->
+
+				<div class="slider__slide swiper-slide w-auto">
+					<span class="py-5p group-[.os-not-mac]/body:pt-7p group-[.os-not-mac]/body:pb-3p px-2.5 bg-green-3 rounded-20 font-medium text-sm text-text leading-0.525p whitespace-nowrap block">Tax Equity</span>	
+				</div><!-- /.slider__slide -->
+			</div><!-- /.slider__slides -->
+		</div><!-- /.slider js-slider -->
+
+		<a href="/dist/ajax/modal-transaction.twig" class="js-modal-transaction-trigger js-tile-transaction-button z-1 min-w-[26px] w-[26px] min-h-[26px] bg-green text-white flex items-center justify-center hover:bg-dark-green transition-colors duration-300">
 			<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M5.70024 9.37H4.33224V5.374H0.318242V4.006H4.31424V0.0279996H5.70024V4.006H9.67824V5.374H5.70024V9.37Z" fill="currentColor" />
 			</svg>

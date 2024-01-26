@@ -3,6 +3,11 @@ import { Grid, Navigation, Pagination } from 'swiper/modules';
 
 Swiper.use([Grid, Navigation, Pagination]);
 
+const sliderTags = new Swiper('.js-slider-tags', {
+    slidesPerView: 'auto',
+    spaceBetween: 16, 
+});
+
 const sliderPartnersOptions = {
     init: false,
     spaceBetween: 14,
