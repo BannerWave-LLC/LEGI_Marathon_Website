@@ -61,6 +61,7 @@ module.exports = {
         'gray-11': '#F6F6F6',
         'granite-gray': '#5D5D5D',
         'blue': '#296782',
+        'blue-dark': '#113B53',
         'black': '#000000',
         'black-opacity-50': 'rgba(0, 0, 0, 0.50)',
         'dark-charcoal': '#333333',
