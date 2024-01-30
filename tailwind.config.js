@@ -9,6 +9,9 @@ module.exports = {
   content: [
     './templates/**/*.twig',
   ],
+  future: {
+		hoverOnlyWhenSupported: true,
+	},
   theme: {
     screens: {
 			'sm': '375px',
