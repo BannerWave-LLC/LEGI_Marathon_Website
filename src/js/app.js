@@ -9,6 +9,7 @@ import "@js/parts/handle-modal";
 import "@js/parts/handle-filters-trigger";
 import "@js/parts/os-handler";
 import "@js/parts/handle-tile-transaction-button-hover";
+import "@js/parts/handle-global-map";
 
 /**
  * Alpine JS
