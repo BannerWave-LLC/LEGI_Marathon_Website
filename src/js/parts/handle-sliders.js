@@ -59,8 +59,27 @@ const sliderBaseOptions = {
     }
 };
 
+const sliderAwardsOptions = {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 10,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    on: {
+        init: function (swiper) {
+            if (swiper.slides.length === 1) {
+                this.el.classList.add('one-item');
+            } else {
+                this.el.classList.remove('one-item');
+            }
+        }
+    }
+};
+
 let sliderPartners = new Swiper('.js-slider-partners', sliderPartnersOptions);
-let sliderAwards = new Swiper('.js-slider-awards', sliderBaseOptions);
+let sliderAwards = new Swiper('.js-slider-awards', sliderAwardsOptions);
 let sliderEvents = new Swiper('.js-slider-events', sliderBaseOptions);
 
 if (document.querySelector('.js-slider-partners') !== null) {
