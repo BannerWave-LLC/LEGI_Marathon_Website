@@ -189,28 +189,44 @@
   height: .1px;
 }
 
-/* width */
-.scroll-transactions-wrapper::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+/* ------------------------------------------------------------ *\
+  Scroll transactions wrapper
+\* ------------------------------------------------------------ */
+
+.scroll-transactions-wrapper {
+  padding-bottom: 15px;
+}
+
+.scroll-transactions-wrapper .simplebar-content {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .scroll-transactions-wrapper .simplebar-content {
+    gap: 17px;
+  }
+}
+
+.scroll-transactions-wrapper .simplebar-track {
   background: white;
   border-radius: 7px;
+  height: 7px;
 }
 
-/* Track */
-.scroll-transactions-wrapper::-webkit-scrollbar-track {
-  box-shadow: none;
-  border-radius: 7px;
-}
-
-/* Handle */
-.scroll-transactions-wrapper::-webkit-scrollbar-thumb {
+.scroll-transactions-wrapper .simplebar-scrollbar::before {
   background: #39b077;
   border-radius: 7px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
 }
 
-/* Handle on hover */
-.scroll-transactions-wrapper::-webkit-scrollbar-thumb:hover {
+.scroll-transactions-wrapper .simplebar-scrollbar::before:hover {
   background: #1f3332;
 }
 
